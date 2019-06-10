@@ -29,7 +29,9 @@ private let DeviceList = [
     /* iPhone 8 */        "iPhone10,1": "iPhone 8", "iPhone10,4": "iPhone 8",
     /* iPhone 8 Plus */   "iPhone10,2": "iPhone 8 Plus", "iPhone10,5": "iPhone 8 Plus",
     /* iPhone X */        "iPhone10,3": "iPhone X", "iPhone10,6": "iPhone X",
-
+    /* iPhone XS */       "iPhone11,2": "iPhone XS",
+    /* iPhone XS Max */   "iPhone11,4": "iPhone XS Max","iPhone11,6" : "iPhone XS Max",
+    /* iPhone XR */       "iPhone11,8": "iPhone XR",
     /* iPad 2 */          "iPad2,1": "iPad 2", "iPad2,2": "iPad 2", "iPad2,3": "iPad 2", "iPad2,4": "iPad 2",
     /* iPad 3 */          "iPad3,1": "iPad 3", "iPad3,2": "iPad 3", "iPad3,3": "iPad 3",
     /* iPad 4 */          "iPad3,4": "iPad 4", "iPad3,5": "iPad 4", "iPad3,6": "iPad 4",
