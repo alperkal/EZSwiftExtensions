@@ -45,7 +45,12 @@ private let DeviceList = [
     /* AppleTV */         "AppleTV5,3": "AppleTV",
     /* Simulator */       "x86_64": "Simulator", "i386": "Simulator"
 ]
-
+private let DeviceWithNotchList = [
+    /* iPhone X */        "iPhone10,3": "iPhone X", "iPhone10,6": "iPhone X",
+    /* iPhone XS */       "iPhone11,2": "iPhone XS",
+    /* iPhone XS Max */   "iPhone11,4": "iPhone XS Max","iPhone11,6" : "iPhone XS Max",
+    /* iPhone XR */       "iPhone11,8": "iPhone XR"
+]
 extension UIDevice {
     /// EZSwiftExtensions
     public class func idForVendor() -> String? {
@@ -91,7 +96,9 @@ extension UIDevice {
     public class func isPad() -> Bool {
         return UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad
     }
-
+    public class func hasNotch() -> Bool {
+        return DeviceWithNotchList[deviceModel()] != nil
+    }
     /// EZSwiftExtensions
     public class func deviceModel() -> String {
         var systemInfo = utsname()
