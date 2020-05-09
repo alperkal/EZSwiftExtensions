@@ -1,0 +1,9 @@
+version: 2
+mergeable:
+  - when: pull_request.*, pull_request_review.*
+    validate:
+      - do: title
+        # Enforce semantic release convention.
+        must_include:
+          regex: 'DO NOT MERGE'
+          message: 'Semantic release conventions must be followed'
