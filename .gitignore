@@ -9,7 +9,7 @@
 ## Build generated
 build/
 DerivedData
-
+*.zip
 ## Various settings
 *.pbxuser
 !default.pbxuser
